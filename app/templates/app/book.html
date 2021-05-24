@@ -15,7 +15,7 @@
                     <div class="card-body text-center px-2 py-3">
                         <h5 class="font-weigh-bold">{{ book.title }}</h5>
                     </div>
-                    <a href="/" class="stretched-link"></a>
+                    <a href="{% url 'detail' book.isbn %}" class="stretched-link"></a>
                 </div>
             </div>
         {% empty %}
